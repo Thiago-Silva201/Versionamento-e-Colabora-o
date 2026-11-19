@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+
+  <style>
+    /* CORES DO SITE: experimente trocar os valores abaixo. */
+    :root {
+      --fundo: lab(0% 0 0);
+      --cartao: oklab(34.846% 0 -0.00004);
+      --texto: lch(100% 0.01 296.81);
+      --detalhe: lch(21.8% 0.46 19.03);
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--fundo);
+      color: var(--texto);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .avatar {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: var(--detalhe);
+      color: white;
+      font-size: 42px;
+    }
+
+    h1 { margin-bottom: 6px; }
+    h2 { margin-top: 0; }
+    .subtitulo { margin-top: 0; color: #64748b; }
+
+    section {
+      background-color: var(--cartao);
+      padding: 24px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .habilidades span {
+      display: inline-block;
+      background-color: #dbeafe;
+      color: hsl(0, 0%, 0%);
+      padding: 6px 10px;
+      margin: 4px;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: var(--detalhe);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover { opacity: 0.85; }
+    a { color: var(--detalhe); }
+    footer { text-align: center; color: #64748b; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="avatar">🥷</div>
+      <!-- AlTERA SEU NOME -->
+      <h1>Olá! Meu Nome é Thiago</h1>
+      <p class="subtitulo">Estudante de Técnico em Informática para Internet</p>
+    </header>
+
+    <section>
+      <h2>Sobre mim</h2>
+      <!-- SOBRE MIM -->
+      <p>Gosto de Jogos, Futebol e Programar</p>
+    </section>
+
+    <section>
+      <h2>Minhas habilidades</h2>
+      <!-- MINHAS HABILIDADES -->
+      <div class="habilidades">
+        <span>Portugol</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Meu Primeiro Projeto</h2>
+      <!-- DESCREVA UM PROJETO OU ATIVIDADE ESCOLAR -->
+      <h3>Foi no Portugol</h3>
+      <p>Fiz um jogo com a ajuda de uma IA, sobre minecraft vocé escolhe alguns dos principais mobs do jogo, vocé pode batalhar contra uma IA ou seu amigo, o Nome do jogo é Minecraft-Fights</p>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <!-- SUBSTITUA # PELO LINK DO SEU GITHUB -->
+      <p>Meu GitHub: <a href="#">https://github.com/Thiago-Silva201</a></p>
+      <button onclick="mostrarMensagem()">Clique para conhecer meu site</button>
+      <p id="mensagem"></p>
+    </section>
+
+    <footer>
+      <!-- ALTERE SEU NOME AQUI TAMBÉM -->
+      <p>Feito por Thiago • 2026</p>
+    </footer>
+  </main>
+
+  <script>
+    // JAVASCRIPT: altere a mensagem que aparece ao clicar no botão.
+    function mostrarMensagem() {
+      document.getElementById("mensagem").textContent =
+        "Vlw Por ver meu Portifolío!!!";
+    }
+  </script>
+</body>
+</html>
